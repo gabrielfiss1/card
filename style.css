@@ -6,7 +6,7 @@ body{
     justify-content: center;
     align-items: center;
     height: 97vh;
-    background: linear-gradient(45deg, #00235B, #E21818, #BE6DB7); 
+    background: linear-gradient(45deg, #00337C, #f5f5f5, #8EA7E9); 
     background-repeat: no-repeat; 
     padding-top: 5.5px;
     
@@ -14,18 +14,20 @@ body{
 #myimg{
     position: relative;
     bottom: 80px;
+    left: 20px;
     display: flex;
     margin: 20px 100px 0 100px;
     width: 125px;
     height: 125px;
     border-radius: 50%;
-    border: 1px solid #00235B;
+    border: 0.5px solid rgba(255, 255, 255, 0.3);
+    object-fit: fill;
 }
 hr{
-    border: 4px dotted #480032; 
+    border: 3px dotted rgba(255, 255, 255, 0.3); 
      height: 0px; 
      border-top: 0;
-     width: 10vh;
+     width: 30vh;
      margin-top: 100px;
      
 }
@@ -35,14 +37,14 @@ hr{
     align-items: flex-end;
     justify-content: center;
     height: 25vh;
-    gap: 30px;
+    gap: 50px;
     /* margin-top: 80px; */
     /* margin-bottom: 1px; */
 }
 .medias{
-    /* display: flex; */
-    /* align-self: flex-end; */
-    /* justify-content: flex-end; */
+    display: flex;
+    align-self: center;
+    justify-content: flex-end;
 
     width: 2.5em;
     height: 2.5em;
@@ -55,28 +57,48 @@ hr{
     transition: 0.5s ease;
     transform: scale(1.50);
 }
-h2 , h3, p{ 
+
+  #content{
     display: flex;
-    justify-content: center;
-    font-family: 'Raleway';
+    text-align: center;
+    align-items: center;
+    justify-content: flex-end;
+    width: 50vh; 
     letter-spacing: 3px;
-    color: #480032;
-}
+    font-family: 'Raleway';
+ } 
+
+ p{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: flex-end;
+ }
+
 
 h2{
+    display: flex;
+    justify-content: center;
     margin-top: -60px;
+    width: 100%;
+    font-size: 30px;
+    letter-spacing: 3px;
+    font-family: 'Raleway';
 }
 section{
     display: flex;
     justify-content: center;
     width: 35vw;
     height: 70vh;
-    border-radius: 20px;
+    border-radius: 25px;
     background-color: white;
     transition: ease-out 1s;
-    /* margin: auto; */
-    /* padding-top: 100px; */
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;}
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
 
 section:hover{
     transition: 1s ;
