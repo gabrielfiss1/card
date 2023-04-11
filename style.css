@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat&family=Raleway:wght@100&display=swap');
+
 
 body{
     display: flex;
@@ -13,17 +15,18 @@ body{
     position: relative;
     bottom: 80px;
     display: flex;
-    margin: 20px 100px;
+    margin: 20px 100px 0 100px;
     width: 125px;
     height: 125px;
     border-radius: 50%;
-    border: 1px solid #480032;
+    border: 1px solid #00235B;
 }
 hr{
     border: 4px dotted #480032; 
      height: 0px; 
      border-top: 0;
      width: 10vh;
+     margin-top: 100px;
      
 }
 .imgs{
@@ -33,18 +36,20 @@ hr{
     justify-content: center;
     height: 25vh;
     gap: 30px;
-    margin: 0;
+    /* margin-top: 80px; */
+    /* margin-bottom: 1px; */
 }
 .medias{
     /* display: flex; */
     /* align-self: flex-end; */
     /* justify-content: flex-end; */
 
-    width: 3em;
-    height: 3em;
+    width: 2.5em;
+    height: 2.5em;
     /* padding-left: 35px; */
-    /* margin-top: 100px; */
+    /* margin-bottom: 10px; */
     transition: 0.5s ease-in-out;
+
 }
 .medias:hover{
     transition: 0.5s ease;
@@ -53,6 +58,13 @@ hr{
 h2 , h3, p{ 
     display: flex;
     justify-content: center;
+    font-family: 'Raleway';
+    letter-spacing: 3px;
+    color: #480032;
+}
+
+h2{
+    margin-top: -60px;
 }
 section{
     display: flex;
@@ -64,10 +76,11 @@ section{
     transition: ease-out 1s;
     /* margin: auto; */
     /* padding-top: 100px; */
-}
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;}
 
 section:hover{
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     transition: 1s ;
    
 }
+
+
