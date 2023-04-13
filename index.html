@@ -6,9 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Card contato</title>
     <link rel="stylesheet" href="style.css">
+    <script src="./anijs-master/dist/anijs-min.js" defer></script>
+    <link rel="stylesheet" href="https://anijs.github.io/lib/anicollection/anicollection.css">
+
 </head>
 <body>
-    <section>
+    <section  data-anijs="if: load, on: window, do: fadeInDown animated">
         <div id="container">       
             <div id="img">
                 <img id="myimg" src="./images/myself.jpeg" alt="me">
@@ -18,11 +21,11 @@
                 <!-- <h3>Front End Developer</h3> -->
                 <p>I'm a Front End developer from Brazil. Currently looking for the best practices and build the future with technologies  </p>
             </div>
-           <hr>
+           <hr  data-anijs="if: load, on: window, do: bounceInLeft animated">
              <div class="imgs">
-                <img class="medias" src="images/instagram (1).png" alt="">
-                <img  class="medias" src="images/twitter.png" alt="">
-                <img  class="medias" src="images/placa-do-github.png" alt="">
+                <img class="medias" src="images/instagram (1).png" alt="instagramlogo" data-anijs="if: mouseover, on: .medias, do: bounceInLeft animated">
+                <img  class="medias" src="images/twitter.png" alt="twitterlogo">
+                <img  class="medias" src="images/placa-do-github.png" alt="githublogo">
              </div>
         </div>
     </section>
