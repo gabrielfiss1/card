@@ -5,10 +5,13 @@ body{
     justify-content: center;
     align-items: center;
     height: 97vh;
-    background: linear-gradient(45deg,#F0EABE,#21E1E1, #3B9AE1,#233E8B);
+    background-color: blueviolet;
+    background-image: url(./images/blob-scene-haikei.svg);
     background-repeat: no-repeat; 
     padding-top: 5.5px;
+    background-size: 100%;
     color: lightgray;
+    /* overflow: hidden; */
 }
 #img{
     display: flex;
@@ -17,13 +20,14 @@ body{
     bottom: 80px;
     margin: 20px 100px 0 110px;
 }
-#myimg{
+ #myimg{
     width: 125px;
     height: 125px;
     border-radius: 50%;
     border: 0.5px solid rgba(255, 255, 255, 0.3);
     object-fit: fill;
 }
+
 hr{
     border: 3px solid rgba(255, 255, 255, 0.3); 
      height: 0px; 
@@ -52,10 +56,10 @@ hr{
     
 
 }
-/* .medias:hover{
+.medias:hover{
     transition: 0.5s ease;
     transform: scale(1.50);
-} */
+}
 
 #content{
     text-align: center;
@@ -89,12 +93,9 @@ section{
     backdrop-filter: blur(8px);
     -webkit-backdrop-filter: blur(8px);
     border: 1px solid rgba(255, 255, 255, 0.3);
+    
 }
 
-section:hover{
-    transition: 1s ;
-   
-}
 
 @media (max-width: 1000px){
     #content{
@@ -106,3 +107,4 @@ section:hover{
     
     }
 }
+

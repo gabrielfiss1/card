@@ -11,21 +11,21 @@
 
 </head>
 <body>
-    <section  data-anijs="if: load, on: window, do: fadeInDown animated">
+    <section data-anijs="if: load, on: window, do: fadeInDown animated">
         <div id="container">       
             <div id="img">
-                <img id="myimg" src="./images/myself.jpeg" alt="me">
+                <img id="myimg" src="./images/myself.jpeg" alt="me" data-anijs="if: click, do: flip animated, to: #myimg">
             </div>
-            <h2>Gabriel Fiss</h2>
+            <h2 data-anijs="if: click, on: h2, do: wobble animated">Gabriel Fiss</h2>
             <div id="content">    
                 <!-- <h3>Front End Developer</h3> -->
                 <p>I'm a Front End developer from Brazil. Currently looking for the best practices and build the future with technologies  </p>
             </div>
-           <hr  data-anijs="if: load, on: window, do: bounceInLeft animated">
+           <hr  data-anijs="if: load, on: window, do: lightSpeedIn animated, after: load">
              <div class="imgs">
-                <img class="medias" src="images/instagram (1).png" alt="instagramlogo" data-anijs="if: mouseover, on: .medias, do: bounceInLeft animated">
-                <img  class="medias" src="images/twitter.png" alt="twitterlogo">
-                <img  class="medias" src="images/placa-do-github.png" alt="githublogo">
+                <img class="medias" src="images/instagram (1).png" alt="instagramlogo" data-anijs="if: load, on: .medias, do: fadeInLeft animated">
+                <img  class="medias" src="images/twitter.png" alt="twitterlogo" data-anijs="if: load, on: .medias, do: fadeInUp animated">
+                <img  class="medias" src="images/placa-do-github.png" alt="githublogo" data-anijs="if: load, on: .medias, do: fadeInRight animated">
              </div>
         </div>
     </section>
